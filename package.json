@@ -72,6 +72,7 @@
     "rxjs-compat": "6.3.0",
     "sass": "^1.53.0",
     "socicon": "3.0.5",
+    "symbol-observable": "^4.0.0",
     "tinymce": "4.5.7",
     "tslib": "^1.9.0",
     "typeface-exo": "0.0.22",
