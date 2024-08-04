@@ -2,7 +2,7 @@
 
 describe('First test suite', () => {
 
-    it('first test', () => {
+    it('20.Types of Locators', () => {
 
         cy.visit('/')
         cy.contains('Forms').click()
@@ -36,7 +36,7 @@ describe('First test suite', () => {
         cy.get('[data-cy="imputEmail1"]')
     })
 
-    it.only('second test', () => {
+    it('21.Finding Web Elements', () => {
         cy.visit('/')
         cy.contains('Forms').click()
         cy.contains('Form Layouts').click()
@@ -60,5 +60,30 @@ describe('First test suite', () => {
             .parents('form')
             .find('nb-checkbox')
             .click()
+    })
+
+    it.only('22.Saving Subject of the Command', () => {
+        cy.visit('/')
+        cy.contains('Forms').click()
+        cy.contains('Form Layouts').click()
+        cy.contains('nb-card', 'Using the Grid').find('[for="inputEmail1"]').should('contain', 'Email')
+        cy.contains('nb-card', 'Using the Grid').find('[for="inputPassword2"]').should('contain', 'Password')
+
+
+        // Antipattern
+        // const usingTheGrid = cy.contains('nb-card', 'Using the Grid')
+        // usingTheGrid.find('[for="inputEmail1"]').should('contain', 'Email')
+        // usingTheGrid.find('[for="inputPassword2"]').should('contain', 'Password')
+
+        // 1 Cypress Alias
+        cy.contains('nb-card', 'Using the Grid').as('usingTheGrid')
+        cy.get('@usingTheGrid').find('[for="inputEmail1"]').should('contain', 'Email')
+        cy.get('@usingTheGrid').find('[for="inputPassword2"]').should('contain', 'Password')
+
+        // 2 Cypress then() methods
+        cy.contains('nb-card', 'Using the Grid').then(usingTheGridForm => {
+            cy.wrap(usingTheGridForm).find('[for="inputEmail1"]').should('contain', 'Email')
+            cy.wrap(usingTheGridForm).find('[for="inputPassword2"]').should('contain', 'Password')
+        })
     })
 })
