@@ -22,7 +22,7 @@ This project is a **modified and lightweight version** of the original [Ngx-Admi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone (https://github.com/ew-code/NGX-CYPRESS-TEST.git)
    ```
 2. Navigate to the project directory:
    ```bash
@@ -50,6 +50,10 @@ Cypress is pre-configured for this project to help with UI automation. To run Cy
 1. Open Cypress dashboard:
    ```bash
    npm run cypress:open
+
+   or
+
+   npx cypress open
    ```
 2. Run all the tests directly in the browser via Cypress UI.
 
@@ -76,6 +80,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ### Others
+
 
 1. **Screenshots** – 
 2. **Technologie używane w projekcie** –  „Angular 8”, „Cypress”, „Bootstrap”,
