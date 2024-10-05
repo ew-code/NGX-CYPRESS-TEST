@@ -50,6 +50,10 @@ Cypress is pre-configured for this project to help with UI automation. To run Cy
 1. Open Cypress dashboard:
    ```bash
    npm run cypress:open
+
+   or
+
+   npx cypress open
    ```
 2. Run all the tests directly in the browser via Cypress UI.
 
