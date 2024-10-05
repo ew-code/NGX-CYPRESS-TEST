@@ -79,7 +79,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-### Inne 
+### Others
+
 
 1. **Screenshots** – 
 2. **Technologie używane w projekcie** –  „Angular 8”, „Cypress”, „Bootstrap”,
