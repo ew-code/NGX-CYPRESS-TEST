@@ -5,8 +5,8 @@ import { onDatepickerPage } from "./datapickerPage"
 
 describe('Test with Page Objects', () => {
 
-    beforeEach('open application', () => {
-        cy.visit('/')
+    beforeEach('open home page', () => {
+        cy.openHomePage()
     })
 
     it('verify navigations across the pages', () => {
